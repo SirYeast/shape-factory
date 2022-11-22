@@ -51,6 +51,7 @@ input[type="button"] {
     grid-template-columns: repeat(6, minmax(100px, 1fr));
     grid-template-rows: repeat(4, minmax(100px, 1fr));
     gap: 10px;
+    rotate: x 180deg;
 }
 
 .square {
