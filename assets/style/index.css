@@ -33,7 +33,9 @@ select {
     width: 200px;
     padding-inline: 10px;
     border: 1px solid rgb(255 255 255 / 0.5);
-    background-color: #191919;}
+    background-color: #191919;
+    line-height: 50px; /* chrome fix */
+}
 
 input[type="button"] {
     width: 150px;
@@ -44,6 +46,7 @@ input[type="button"] {
 
 #shape-info {
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 #shape-grid {
@@ -51,7 +54,20 @@ input[type="button"] {
     grid-template-columns: repeat(6, minmax(100px, 1fr));
     grid-template-rows: repeat(4, minmax(100px, 1fr));
     gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 -5px 10px rgb(0 0 0 / 0.2);
+    background-color: #212121;
     rotate: x 180deg;
+}
+
+#shape-grid > * {
+    transition: scale 0.2s;
+    cursor: pointer;
+}
+
+#shape-grid > *:hover {
+    scale: 1.1;
 }
 
 .square {
