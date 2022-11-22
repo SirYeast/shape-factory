@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shape Factory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <script src="assets/script/index.js" type="module"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Shape Factory</h1>
+        <form>
+            <select id="shape-dd">
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+            </select>
+            <select id="colour-dd">
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+            </select>
+            <input type="button" value="Create">
+        </form>
+        <p id="shape-info">Click on a shape to get its info</p>
+        <div id="shape-grid"></div>
+    </main>
+</body>
+
+</html>
